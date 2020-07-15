@@ -1,14 +1,17 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
 import "assets/scss/style.scss";
-import Button from 'components/Button/index';
+import LandingPage from 'pages/LandingPage'
 
 function App() {
   return (
     <div className="App">
-      <Button children="Button Biasa" isPrimary={true}/>
-      <Button children="Type Link External" type="Link" isExternal={true} isPrimary={true}/>
-      <Button children="Type Link Not External" type="Link" isExternal={false} isPrimary={true}/>
+      <Router>
+        <Route path="/" component={LandingPage}></Route>
+      </Router>
     </div>
+    
   );
 }
 

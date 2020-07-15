@@ -7,3 +7,5 @@ test('should not allowwed to click if isDisabled is present', () => {
 
     expect(container.querySelector('span.disabled'))
 })
+
+

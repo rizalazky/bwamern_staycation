@@ -40,11 +40,11 @@ export default function Button(props) {
     if(props.type === "Link"){
         if(props.isExternal){
             return(
-            <a href={props.href} className={className.join(" ")} onClick={onClick}>{props.children}</a>
+            <a href={props.href} className={className.join(" ")} style={props.style} onClick={onClick}>{props.children}</a>
             )
         }else{
             return(
-                <Link to={props.href} className={className.join(" ")} onClick={onClick}>{props.children}</Link>           
+                <Link to={props.href} className={className.join(" ")} style={props.style} onClick={onClick}>{props.children}</Link>           
             )
         }
     }else{
