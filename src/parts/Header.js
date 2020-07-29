@@ -15,8 +15,8 @@ export default function Header(props) {
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <IconText/>
                 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav ml-auto">
                             <li className={`nav-item ${getNavLinkClass("/")}`}>
                                 <Button type="Link" href="/" children="Home" className="nav-link"></Button>
                             </li>
