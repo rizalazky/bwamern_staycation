@@ -21,7 +21,7 @@ export default function Categories(props) {
                                     <figure className="img-wrapper" style={{height:180}}>
                                         <img alt={da.name} src={da.imageUrl} className="img-cover"></img>
                                     </figure>
-                                    <div className="meta-wrapper" style={{ padding:10}}>
+                                    <div className="meta-wrapper">
                                         <Button type='Link' href={`/${da._id}`} className="streched-link d-block text-gray-800">
                                             <h5>{da.name}</h5>
                                         </Button>
