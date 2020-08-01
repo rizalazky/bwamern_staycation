@@ -2,6 +2,8 @@ import React from 'react'
 import IconText from './IconText'
 import Button from 'components/Button'
 
+import Fade from 'react-reveal/Fade'
+
 export default function Header(props) {
 
     const getNavLinkClass = path =>{
@@ -9,6 +11,7 @@ export default function Header(props) {
     }
 
     return (
+        <Fade>
         <header className="spacing-sm">
             <div className="container-fluid">
 
@@ -35,5 +38,6 @@ export default function Header(props) {
                 </nav>
             </div>
         </header>
+        </Fade>
     )
 }

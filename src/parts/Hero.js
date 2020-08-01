@@ -11,6 +11,8 @@ import IconTreasure from 'assets/images/icons/icon-treasure.svg'
 
 import formatNumber from 'utils/formatNumber'
 
+import Fade from 'react-reveal/Fade'
+
 
 export default function Hero(props) {
 
@@ -21,6 +23,7 @@ export default function Hero(props) {
         })
     }
     return (
+        <Fade bottom>
         <section className="container pt-4">
             <div className="row align-items-center">
                 <div className="col-md-6">
@@ -52,5 +55,6 @@ export default function Hero(props) {
                 </div>
             </div>
         </section>
+        </Fade>
     )
 }
